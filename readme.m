@@ -51,16 +51,38 @@ function readme()
 %
 %   * The subsumption test is created for users to help build a cohesive search list - Search quality gets lower when 2 search terms subsume each other (unless you need it so). For example, if you are interested in the transcription factor 'Jun', and 'JunA', addding ' Jun ', '-Jun', 'Jun-' and 'JunA' would be the best way to create the search list (instead of just 'Jun' and 'JunA').This prevents the program from mixing JunA's experiments with Jun's experiments. (Note adding spaces and hypens also allows you to skip hits with other terms such as "June")
 % 
-% IV. HELP/REPORT BUGS
+% IV Results 
+%   1. The main search result is the searchGEO_RankingsResults.txt file
+%   which contains scores and dataset information for each qualifying GSE
+%   2. accessionsGroupedByHits.csv contains (1) the GSEs in the Results
+%   file grouped by term (2) the score of each search term(which is a
+%   function of average rank and number of experiments found). This can be 
+%   used to complete the n=2 step of a markov correction of the "experiment
+%   scores" which assume a uniform "term score" in the n=1 step. The search
+%   was never developed to compute the n=2 step automatically since the n=1 step
+%   was a very good classifier - but this could be done manually by running
+%   a second search with "high" quality search terms
+%   3. preprocessing_rawHits.csv is useful to find the GSEs that got hit by
+%   the search terms prior to filtering - useful to know if a majority of good
+%   experiments from the searchGEO_Rankings_result are being missed by the
+%   filtering parameters. 
+%   4. The subsumptionTestResult.csv shows you the results of the subsumption test
+%   on the search terms as explained in section IIIb. 
+%   5. BRAIN_PARTS.mat and nextAutoSave.mat files contain the confif
+%   parameters and progress of the search - won't be much useful, but
+%   included here if you want to make changes to how the search works
+
+
+% V. HELP/REPORT BUGS
 %     If you experience difficulties using this program, first make sure that
 % the steps in Section II and Section III have been completed. 
 % 
 % Please direct questions/comments to:
 % Aman Sharma (Pavlab)
 % 
-% V. REVISION NOTES: 
+% VI. REVISION NOTES: 
 % 
-% VI Appendix
+% VII Appendix
 %  1. A list of different experiment types on GEO is as follows (NOTE more
 %  expTypes may get added in the future, in which case, you should add them
 %  exactly as they appear 
