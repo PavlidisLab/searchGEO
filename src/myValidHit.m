@@ -1,0 +1,17 @@
+function v = myValidHit(array, goodLookfor,badLookfor, margin)
+% checks if badLookfor is near 10 char away terms nearby 
+array = eraseBetween( array , "<",">",'boundaries','inclusive');
+g = mystrfind(array,goodLookfor);
+b = mystrfind(array,badLookfor);
+v =0;
+for i = 1:length(g)
+  if min( abs( b - g(i,1))) > margin
+      v = 1;
+      break
+  end
+end
+if length(b) == 0 v=1;, end
+if length(g) == 0 v=0;, end
+
+
+end

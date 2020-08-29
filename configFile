@@ -1,0 +1,19 @@
+## this config file is formatted like a csv and fields and values are separated by a comma ## read the readme to understand the fields
+Field,Value
+geoStart, GSE1
+geoEnd, GSE100
+fileToSkip, 
+numThreads,
+firstHitList,
+secondHitList,
+hitEnhance,
+removeHit,
+expTypesNeeded,
+runGemma,1
+gemmaUsername,
+gemmaPassword,
+rawDataDir,/space/scratch/amansharma/Data/GeoSoftFiles
+needSampleSizeFilter,
+minSampleSize,
+maxSampleSize,
+overrideSubsumptionCheck,
