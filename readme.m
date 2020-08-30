@@ -54,7 +54,8 @@ function readme()
 %   minSampleSize - if you need a sample size filter, enter the minimum sample size to include in the search results
 %   maxSampleSize - if you need a sample size filter, enter the maximum sample size to include in the search results                                                                                                      
 %   overrideSubsumptionCheck - Enter 1 to skip the check by subsumption test or 0 to not skip it. See * below for an explanation of the subsumption check.
-%
+%   html - 0 for soft file use (default) or 1 for HTML parsing. (Useful if creating/using a rawDataDir is not available for the user). Note: the search results might be different if html parsing is used vs not used since the HTML pages of GEO can be slightly different from the soft files - (for example hyperlink information is extracted from HTML parsing but NOT soft files)  
+% 
 %   * The subsumption test is created for users to help build a cohesive search list - Search quality gets lower when 2 search terms subsume each other (unless you need it so). For example, if you are interested in the transcription factor 'Jun', and 'JunA', addding ' Jun ', '-Jun', 'Jun-' and 'JunA' would be the best way to create the search list (instead of just 'Jun' and 'JunA').This prevents the program from mixing JunA's experiments with Jun's experiments. (Note adding spaces and hypens also allows you to skip hits with other terms such as "June")
 % 
 % IV Results 
