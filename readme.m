@@ -6,7 +6,7 @@ function readme()
 % 
 %    Note: The program is only as good as your search terms. The more
 %    selective and comprehensive your search terms are, the better the
-%    search. 
+%    search will be. 
 %    Note: This version of the program filters in experiments with
 %    human,mouse,rattus data only. 
 % 

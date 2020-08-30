@@ -131,7 +131,8 @@ options.Timeout = 10000;
 options.CertificateFilename = '';
 disp('Running phase 1: Gathering and parsing GEO Data (Takes ~5 sec for 1 GEO experiment including its sample pages)')
 disp('Estimated date and time of completion of Phase 1:')
-disp(datetime() + hours(1.378*6.5*length(A)/numWorkers/3600))
+estTimeCorrection = hours(0); if length(A)>20000 estTimeCorrection = hours(length(A)/30000);end
+disp(datetime() + hours(1.378*6.5*length(A)/numWorkers/3600) + estTimeCorrection)
 tic
 parfor i = 1:length(A)
         [Output{i,2},infoList(i,1)] = masterRunner(i,A,0, html, locOfSofts);      
