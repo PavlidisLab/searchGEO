@@ -32,7 +32,7 @@ for i=1:size(re_processed4,1)
         
         check = setdiff(mystrfind(re_processed4{i,12},["rat";"mus";"homo"]) - 1,0);
         myStr = char(re_processed4{i,12});
-        if isempty(check) || sum(isletter(myStr(check))) < length(check)         
+        if isempty(check) || sum(isletter(myStr(check'+1)))>0         
         re_processed4(i,21) = {1};
         else re_processed4(i,21) = {0};
         end

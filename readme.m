@@ -2,7 +2,13 @@ function readme()
 % 
 % I. INTRODUCTION
 %     The MATLAB 2018a program contained within this directory acts as a search engine to find GEO
-%     information and gather relevant experiment information.
+%     information and gather relevant experiment information. 
+% 
+%    Note: The program is only as good as your search terms. The more
+%    selective and comprehensive your search terms are, the better the
+%    search. 
+%    Note: This version of the program filters in experiments with
+%    human,mouse,rattus data only. 
 % 
 % 
 % II. SETUP

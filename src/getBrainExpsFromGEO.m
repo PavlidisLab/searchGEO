@@ -141,7 +141,7 @@ delete(gcp)
 disp(sprintf("\n\nPhase 1: first pass finished on %s... Will now check for skipped experiments",datetime()))
 assignin('base','infoList',infoList)
 myCounter = 2;
-disp("HTML parsing turned ON for experiments where GEO softs weren't downloaded (for example large sample size experiments). ")
+disp("HTML parsing now turned ON for experiments where GEO softs weren't downloaded (for example large sample size experiments). ")
 while and(testIfReRunsLeft(Output),myCounter>0)
     pause(5)
     fprintf("\nNumber of re-trying for loops left: %s\n",string(myCounter))
