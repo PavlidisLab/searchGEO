@@ -141,7 +141,7 @@ end
 if exist('firstRanks','var')
 fprintf('\n\nEnding Phase 2: Completing network of hits and accession #s ...  ')
 clusterExpsForTerms
-fprintf('saved csv "accessionsGroupedByHits.csv" for Hits vs GSE accessions for additional analysis\n\nAll phases finished... shutting down search engine.\n') 
+fprintf('saved csv "accessionsGroupedByHits.csv" for Hits vs GSE accessions for additional analysis\n\nAll phases finished... shutting down search engine. \n\nOutput files are saved in the "Results" folder. User is advised to EITHER move this folder to a different directory OR rename the folder so it doesnt clash with future search results. A copy of this Results folder is also saved in the resultsArchive (which can stay as-is)\n') 
 end
 
 cd .. 
