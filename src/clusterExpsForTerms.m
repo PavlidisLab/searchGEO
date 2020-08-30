@@ -3,28 +3,28 @@
 
 part1 = {[]}; for i = 1:size(BRAIN_PARTS,1) part1{i,1} = BRAIN_PARTS(i,1);, end ; part1(1,2) = {[]}; 
 for i = 1:size(infoList,1)
-    temp = infoList(i).net1;
+    temp = unique([infoList(i).net1;infoList(i).net5]);
     if ~isempty(temp)
         part1 = helper(part1, A(i,1) , temp); % part1 is Brain vs GSe  ,, i is GSE# ,, temp is array of Brain coordinates
     end
 end
 part2 = {[]}; for i = 1:size(ACC_PARTS,1) part2{i,1} = ACC_PARTS(i,1);, end ; part2(1,2) = {[]}; 
 for i = 1:size(infoList,1)
-    temp = infoList(i).net2;
+    temp = unique([infoList(i).net2;infoList(i).net6]);
     if ~isempty(temp)
         part2 = helper(part2, A(i,1) , temp);
     end
 end
 part3 = {[]}; for i = 1:size(GoodBrainParts,1) part3{i,1} = GoodBrainParts(i,1);, end ; part3(1,2) = {[]}; 
 for i = 1:size(infoList,1)
-    temp = infoList(i).net3;
+    temp = unique([infoList(i).net3;infoList(i).net7]);
     if ~isempty(temp)
         part3 = helper(part3, A(i,1) , temp);
     end
 end
 part4 = {[]}; for i = 1:size(OtherParts,1) part4{i,1} = OtherParts(i,1);, end ; part4(1,2) = {[]}; 
 for i = 1:size(infoList,1)
-    temp = infoList(i).net4;
+    temp = unique([infoList(i).net4;infoList(i).net8]);
     if ~isempty(temp)
         part4 = helper(part4, A(i,1) , temp); 
     end

@@ -93,7 +93,7 @@ startLoopTimer = tic;
                                if ~myIsStringArrayEmpty(BRAIN_PARTS) && contains(tempgsmurl,BRAIN_PARTS, 'ignorecase',true) && myValidHit(tempgsmurl,BRAIN_PARTS,"=",10)
                                    OUT(1,5) = {1};
                                    OUT(1,15) = addLog(tempgsmurl,BRAIN_PARTS,id,OUT(1,15));
-                                   info.net5 = unique([info.net1 ; mycontains(tempgsmurl, BRAIN_PARTS)]);
+                                   info.net5 = unique([info.net5 ; mycontains(tempgsmurl, BRAIN_PARTS)]);
                            if contains(cleanedTempgsmurl,BRAIN_PARTS,'ignorecase',true)
                               OUT(1,5) = {2};
                           end
@@ -102,7 +102,7 @@ startLoopTimer = tic;
                                if ~myIsStringArrayEmpty(ACC_PARTS) &&  contains(tempgsmurl,ACC_PARTS, 'ignorecase',true) && myValidHit(tempgsmurl,ACC_PARTS,"=",10) 
                                     OUT(1,6) = {1};
                                     OUT(1,15) = addLog(tempgsmurl,ACC_PARTS,id,OUT(1,15));
-                                    info.net6 = unique([info.net2 ; mycontains(tempgsmurl, ACC_PARTS)]);
+                                    info.net6 = unique([info.net6 ; mycontains(tempgsmurl, ACC_PARTS)]);
                                     if contains(cleanedTempgsmurl,ACC_PARTS,'ignorecase',true)
                               OUT(1,6) = {2};
                                end
@@ -111,7 +111,7 @@ startLoopTimer = tic;
                                if ~myIsStringArrayEmpty(GoodBrainParts) && contains(tempgsmurl,GoodBrainParts, 'ignorecase',true) && myValidHit(tempgsmurl,GoodBrainParts,[hits;"="],15)
                                OUT(1,18) = {1};
                                OUT(1,15) = addLog(tempgsmurl,GoodBrainParts,id,OUT(1,15));
-                               info.net7 = unique([info.net3 ; mycontains(tempgsmurl, GoodBrainParts)]);
+                               info.net7 = unique([info.net7 ; mycontains(tempgsmurl, GoodBrainParts)]);
                                if contains(cleanedTempgsmurl,GoodBrainParts,'ignorecase',true)
                               OUT(1,18) = {2};
                                end
@@ -120,7 +120,7 @@ startLoopTimer = tic;
                                if ~myIsStringArrayEmpty(OtherParts) && contains(tempgsmurl,OtherParts, 'ignorecase',true) && myValidHit(tempgsmurl,OtherParts,"=",10)
                                OUT(1,19) = {1};
                                OUT(1,15) = addLog(tempgsmurl,OtherParts,id,OUT(1,15));
-                               info.net8 = unique([info.net4 ; mycontains(tempgsmurl, OtherParts)]);
+                               info.net8 = unique([info.net8 ; mycontains(tempgsmurl, OtherParts)]);
                                if contains(cleanedTempgsmurl,OtherParts,'ignorecase',true)
                                OUT(1,19) = {2};
                                end

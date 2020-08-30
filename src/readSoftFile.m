@@ -73,7 +73,7 @@ id = strcat("GSE",string(A(i,1)));
                                if ~myIsStringArrayEmpty(BRAIN_PARTS) && contains(tempgsmurl,BRAIN_PARTS, 'ignorecase',true) && myValidHit(tempgsmurl,BRAIN_PARTS,"=",10)
                                    a(1,5) = {1};
                                    a(1,15) = addLog(tempgsmurl,BRAIN_PARTS,id,a(1,15));
-                                   infoToSend.net5 = unique([infoToSend.net1 ; mycontains(tempgsmurl, BRAIN_PARTS)]);
+                                   infoToSend.net5 = unique([infoToSend.net5 ; mycontains(tempgsmurl, BRAIN_PARTS)]);
                            if contains(cleanedTempgsmurl,BRAIN_PARTS,'ignorecase',true)
                               a(1,5) = {2};
                           end
@@ -82,7 +82,7 @@ id = strcat("GSE",string(A(i,1)));
                                if ~myIsStringArrayEmpty(ACC_PARTS) &&  contains(tempgsmurl,ACC_PARTS, 'ignorecase',true) && myValidHit(tempgsmurl,ACC_PARTS,"=",10) 
                                     a(1,6) = {1};
                                     a(1,15) = addLog(tempgsmurl,ACC_PARTS,id,a(1,15));
-                                    infoToSend.net6 = unique([infoToSend.net2 ; mycontains(tempgsmurl, ACC_PARTS)]);
+                                    infoToSend.net6 = unique([infoToSend.net6 ; mycontains(tempgsmurl, ACC_PARTS)]);
                                     if contains(cleanedTempgsmurl,ACC_PARTS,'ignorecase',true)
                               a(1,6) = {2};
                                end
@@ -91,7 +91,7 @@ id = strcat("GSE",string(A(i,1)));
                                if ~myIsStringArrayEmpty(GoodBrainParts) && contains(tempgsmurl,GoodBrainParts, 'ignorecase',true) && myValidHit(tempgsmurl,GoodBrainParts,[hits;"="],15)
                                a(1,18) = {1};
                                a(1,15) = addLog(tempgsmurl,GoodBrainParts,id,a(1,15));
-                               infoToSend.net7 = unique([infoToSend.net3 ; mycontains(tempgsmurl, GoodBrainParts)]);
+                               infoToSend.net7 = unique([infoToSend.net7 ; mycontains(tempgsmurl, GoodBrainParts)]);
                                if contains(cleanedTempgsmurl,GoodBrainParts,'ignorecase',true)
                               a(1,18) = {2};
                                end
@@ -100,7 +100,7 @@ id = strcat("GSE",string(A(i,1)));
                                if ~myIsStringArrayEmpty(OtherParts) && contains(tempgsmurl,OtherParts, 'ignorecase',true) && myValidHit(tempgsmurl,OtherParts,"=",10)
                                a(1,19) = {1};
                                a(1,15) = addLog(tempgsmurl,OtherParts,id,a(1,15));
-                               infoToSend.net8 = unique([infoToSend.net4 ; mycontains(tempgsmurl, OtherParts)]);
+                               infoToSend.net8 = unique([infoToSend.net8 ; mycontains(tempgsmurl, OtherParts)]);
                                if contains(cleanedTempgsmurl,OtherParts,'ignorecase',true)
                                a(1,19) = {2};
                                end
