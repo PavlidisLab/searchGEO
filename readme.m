@@ -12,13 +12,13 @@ function readme()
 % 
 % 
 % II. SETUP
-%     1. You must have MATLAB software (program was built for the 2018a version) installed on your computer
+%     1. You must have MATLAB software (program was built for the 2018a version) installed on your computer/server
 %     2. Create a configuration (text) file with various search parameters
 %     defined in section III in the same location as the 'searchGEO.m'
 %     file. 
 %     3. Either 
 %         a. Run the program via command line (with the appropriate parameters defined in section III) by running: 
-%             matlab -nodisplay -r "searchGEO('config','configFilename') 
+%             matlab -nodisplay -r "searchGEO('config','configFilename')" 
 %                     NOTE on PAVLAB servers, calling "matlab" will open matlab 2013a so it is advised to run the CLI as follows 
 %                             /space/opt/matlab/2018a/bin/matlab -nodisplay -r "searchGEO('config','configFilename')" 
 %         b. Or open Matlab (TUI or GUI) and call the function searchGEO by
